@@ -13,6 +13,7 @@ latest_db <- mdt_files %>%
   slice(1) %>% 
   dplyr::select(name) %>% 
   unlist()
+print(glue("latest_db: {latest_db}"))
 
 drive_download(glue("MyDartTraining/{latest_db}"), overwrite = TRUE,
                path = "data/db_latest.mdt")

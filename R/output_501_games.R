@@ -2,7 +2,7 @@ library(dbplyr)
 library(RSQLite)
 library(readr)
 
-mdt_file <- "C:/Documents and Settings/alunh/Documents/repos/binary_data/darts/db_latest.mdt"
+mdt_file <- "data/db_latest.mdt"
 
 ## connect to db
 con <- dbConnect(drv=RSQLite::SQLite(), dbname=mdt_file)
